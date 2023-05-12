@@ -202,6 +202,7 @@ small {
     background: white;
     width: 66em;
     padding: 30px;
+    border-radius: .3em;
 }
 
 .past .past-sessions img{
@@ -243,14 +244,23 @@ small {
 }
 
 .past .date .more {
+    position: absolute;
     border-radius: .2em;
     border: 2px solid #f0f0f3;
-    padding: 39px 39px;
+    width: 121px;
+    height: 118px;
+    bottom: 40.4em;
+    left: 103em;
     display: grid;
     justify-items: center;
 }
 
-.past .date .more::before {
+.past .date .more i {
+    display: flex;
+    align-items: center;
+}
+
+.past .date .datebg::before {
    content: '';
    border-top: 1px solid #f0f0f3;
    top: 180px;
@@ -265,3 +275,60 @@ small {
 
 /*More Subjects*/
 
+.more {
+    background: white;
+    margin-top: 30px;
+    border-radius: .3em;
+    padding: 30px;
+    width: 66em;
+}
+
+.more .more-subjects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more .more-list {
+    margin-top: 20px;
+}
+
+.more .more-list .input {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f3;
+}
+
+
+.more .more-list .input img{
+    object-fit: cover;
+    width: 90px;
+}
+
+.more .more-list .input h1{
+    padding-right: 17em;
+}
+
+.more .more-subjects .start {
+    background: var(--txt-button);
+    color: white;
+    border: 0px ;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+.more .more-list .input select {
+    outline: 0;
+    padding: 10px 50px;
+    appearance: none;
+    font-size: 15px;
+    border-radius: .5em;
+
+}
+
+
+.more .more-list .input-final {
+    border-bottom: 0px ;
+
+}
