@@ -20,7 +20,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 380px 1fr 1fr;
+    grid-template-columns: 380px 450px 1fr;
 }
 
 i {
@@ -32,6 +32,10 @@ small {
     display: block;
     padding: 15px 0px;
     color: #acacac;
+}
+
+.main {
+    padding-top: 2em;
 }
 
 /*HEADER*/
@@ -106,6 +110,8 @@ small {
     color: var(--txt-button);
     cursor: pointer;
 }
+
+
 
 /*Keep it up*/
 
@@ -187,3 +193,75 @@ small {
     color: #F7DC4D;
     cursor: pointer;
 }
+
+
+/*Past Session*/
+
+
+.past {
+    background: white;
+    width: 66em;
+    padding: 30px;
+}
+
+.past .past-sessions img{
+    object-fit: cover;
+    width: 90px;
+}
+
+.past .past-sessions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.past .past-sessions p {
+    margin-top: 10px;
+}
+
+.past .past-sessions p:hover {
+    color: #48cfa9;
+    cursor: pointer;
+}
+
+
+.past .date {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px 30px;
+}
+
+.past .date .datebg {
+    display: grid;
+    justify-items: center;
+    padding: 30px 20px;
+    background: #f0f0f3;
+    border-radius: .2em;
+}
+
+.past .date .more {
+    border-radius: .2em;
+    border: 2px solid #f0f0f3;
+    padding: 39px 39px;
+    display: grid;
+    justify-items: center;
+}
+
+.past .date .more::before {
+   content: '';
+   border-top: 1px solid #f0f0f3;
+   top: 180px;
+   right: 60px;
+   position: absolute;
+   display: block;
+   width: 62em;
+   height: 2px;
+   background: #f0f0f3;
+}
+
+
+/*More Subjects*/
+
