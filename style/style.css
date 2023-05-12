@@ -20,7 +20,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 380px 1fr 1fr;
 }
 
 i {
@@ -104,5 +104,86 @@ small {
 
 .logout p:hover {
     color: var(--txt-button);
+    cursor: pointer;
+}
+
+/*Keep it up*/
+
+.section1 {
+    padding-top: 2em;
+}
+.section1 .div1 {
+    margin-bottom: 20em;
+
+}
+.section1 .div1 small {
+    padding: 0px;
+}
+.section1 .div1, .div1-inf{
+    background: white;
+    width: 23em;
+    height: 20em;
+    display: grid;
+    justify-items: center;
+    border-radius: .5em;
+
+}
+
+.section1 .div1 .banner img {
+    object-fit: cover;
+    width: 368px;
+    border-radius: .5em  .5em 0 0;
+
+} 
+
+.section1 .div1 .calc {
+    display: flex;
+    justify-content: center;
+}
+.section1 .div1 .calc img {
+    object-fit: cover;
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.section1 .div1 .select-section1 {
+    margin-bottom: 25px;
+    border: 1px solid #acacac;
+    padding: 0px 100px;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: 0;
+    appearance: none;
+}
+
+.section1 .div1 .start {
+    margin-bottom: 25px;
+    background: var(--txt-button);
+    color: white;
+    border: 0px ;
+    padding: 0px 30px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.section1 .div2 {
+    background: white;
+    width: 23em;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    gap: 20px;
+    border-radius: .5em;
+}
+.section1 .div2 img{
+    object-fit: cover;
+    width: 50px;
+}
+
+.section1 .div2 h3:hover{
+    color: #F7DC4D;
     cursor: pointer;
 }
