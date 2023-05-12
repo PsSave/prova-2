@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-bg-color: #f1f2f7;
+    --txt-button: #48cfa9;
+}
+
+
+
+body {
+    background: var(--main-bg-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+i {
+    font-size: 25px;
+}
+
+small {
+    font-size: 15px;
+    display: block;
+    padding: 15px 0px;
+    color: #acacac;
+}
+
+/*HEADER*/
+
+
+.header {
+    background: white;
+    width: 20em;
+    height: 100vh;
+    padding: 2.8em;
+
+}
+
+.profile {
+    height: 25em;
+
+}
+
+.img-perfil img {
+    object-fit: cover;
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+}
+
+.profile ul li {
+    margin-left: 20px;
+    padding-bottom: 3em;
+    list-style: none;
+}
+
+.profile ul li::before {
+    content: "\2022";    
+    color: var(--txt-button);
+    display: inline-block;
+    position: absolute;
+    margin-left: -1em;
+}
+
+.profile p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: .7em;
+}
+
+
+.profile p:hover {
+    color: var(--txt-button);
+    cursor: pointer;
+}
+
+.about{
+    padding-bottom: 21em;
+
+}
+
+.about p {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 10px;
+}
+
+.about p:hover {
+    color: var(--txt-button);
+    cursor: pointer;
+}
+
+
+.logout p:hover {
+    color: var(--txt-button);
+    cursor: pointer;
+}
